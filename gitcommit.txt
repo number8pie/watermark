@@ -1,3 +1,13 @@
 #NEXT COMMIT MESSAGE:
 
-Added gitcommit.txt file to add commit messages to as I work.
+Added form: text to use in watermark, file upload button and submit.
+Added courier new font file in root.
+Created function watermarkMe() that takes two parameters, the image to watermark and the text to watermark on the image.
+Checked if the $_POST variable with the key of submit is set and if so set the image and text variables and pass them to the watermarkMe() function.
+Script now takes a jpg image and overlays whatever is put in the text box.
+NEXT:
+-Make it take png and gif images, and output an error message if it's not one of these files.
+-Check that the image submitted is a valid image.
+-Adjust watermark color and transparency.
+-Add lines in intervals to the watermark, same color and transparrency as watermark text.
+-Analyse project and notes.
