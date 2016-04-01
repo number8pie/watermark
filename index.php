@@ -51,7 +51,7 @@ if (isset($_POST['submit'])) {
         <form enctype="multipart/form-data" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
           <label for="wm_txt">Text to watermark image with:</label>
           <input type="text" id="wm_txt" name="wm_txt" value="<?php if(!empty($wm_txt)) { echo $wm_txt; } ?>"></input>
-          <label for="wm_img">Image you want to watermark:</label>
+          <label for="wm_img">Image (jpg only for now!) you want to watermark:</label>
           <input type="file" id="wm_img" name="wm_img"></input>
           <input class="button" type="submit" name="submit" value="Watermark Me!"></input>
         </form>
